@@ -14,7 +14,7 @@ env.hosts = ['54.90.59.189', '54.234.32.20']
 
 
 def do_pack():
-    """generate .tgz archive of the web_static/ folder"""
+    """generate .tgz archive of the web_static/ folder """
     timenow = strftime("%Y%M%d%H%M%S")
     try:
         local("mkdir -p versions")
@@ -27,7 +27,7 @@ def do_pack():
 
 def do_deploy(archive_path):
     """
-    Deploy archive to the web server
+    Deploy archive to the web server 
     """
     if os.path.isfile(archive_path) is False:
         return False
